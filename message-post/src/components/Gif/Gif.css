@@ -1,0 +1,8 @@
+.gifs{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    height: 150px;
+    justify-content: space-around;
+    overflow: scroll;
+    overflow-x: hidden;
+}

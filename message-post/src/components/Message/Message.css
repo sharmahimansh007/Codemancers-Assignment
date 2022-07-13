@@ -1,0 +1,79 @@
+body{
+    background-color: #18191a;
+
+}
+.header{
+    background-color: #242526;
+    padding: 5px 0 5px 30px ;
+    display: flex;
+}
+.icons{
+    /* border: 1px solid red; */
+    margin: auto;
+    width: 40%;
+}
+.icons>img{
+    width: 40px;
+   margin-right: 90px;
+   /* border: 1px solid red; */ 
+}
+
+.Post-body{
+    /* border: 1px solid red; */
+    width: 35%;
+    margin: auto;
+    padding: 10px;
+    background-color: #242526;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.input{
+
+    display: flex;
+    border-bottom: 1px solid rgb(61, 61, 61);
+    padding-bottom: 15px;
+    
+}
+
+.inputBox{
+    margin-left: 30px;
+    width: 80%;
+    border-radius: 50px;
+    background-color: #4b4c4d;
+    border: #242526;
+    padding-left: 20px;
+}
+.inputBox::placeholder{
+    font-size: 1.5em;
+    color: #b8b6b6;
+    font-weight: 400;
+}
+.otherIcon{
+    display: flex;
+    padding: 0px 20px;
+    margin-top: 20px;
+}
+.otherIcon:hover{
+    cursor: pointer;
+    background-color: #4b4c4d;
+    border-radius: 10px;
+}
+
+.otherIcon>img{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.otherIcon>p{
+    color: #b8b6b6;
+}
+.messageOptions{
+    display: flex;
+    justify-content: space-around
+}
+
+.myGif{
+    border-bottom: 1px solid rgb(61, 61, 61);
+
+}
