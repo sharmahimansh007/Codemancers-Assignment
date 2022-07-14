@@ -23,7 +23,7 @@ export const Giphy = ({Data}) => {
 
             {gifs.map((gif) => {
                 return(
-                 <img  key={gif.id} src={gif.images.original.url} onClick={() => {Data(gif.images.original.url)}} width={"100px"} alt="" />
+                 <img style={{"cursor":"pointer"}} key={gif.id} src={gif.images.original.url} onClick={() => {Data(gif.images.original.url)}} width={"100px"} alt="" />
                  )
                 })}
             </div>

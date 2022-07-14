@@ -30,7 +30,7 @@ body{
 .input{
 
     display: flex;
-    border-bottom: 1px solid rgb(61, 61, 61);
+    /* border-bottom: 1px solid rgb(61, 61, 61); */
     padding-bottom: 15px;
     
 }
@@ -48,6 +48,18 @@ body{
     color: #b8b6b6;
     font-weight: 400;
 }
+.post{
+    /* border: 1px solid red; */
+    margin: auto;
+    width: 90%;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #2374e1;
+    color: white;
+    cursor: pointer;
+}
+
 .otherIcon{
     display: flex;
     padding: 0px 20px;
@@ -75,5 +87,15 @@ body{
 
 .myGif{
     border-bottom: 1px solid rgb(61, 61, 61);
+    margin: 10px 0;
+}
 
+.posted-data{
+    /* border: 1px solid red; */
+    width: 35%;
+    margin: auto;
+    padding: 10px;
+    background-color: #242526;
+    margin-top: 50px;
+    border-radius: 10px;
 }
