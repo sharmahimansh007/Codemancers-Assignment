@@ -16,9 +16,17 @@ export const MessagePost = () => {
     const [gifPost, setGifPost] = React.useState("");
 
     const handlePost = (e) => {
+        
         setGifPost(Data)
         setData("")
     }
+
+    const handleText = () => {
+        
+        alert("This Button is Disabled")
+    }
+
+   
 
 
     return(
@@ -45,7 +53,6 @@ export const MessagePost = () => {
                     <img width={"40px"} src="https://www.pngmart.com/files/21/Account-User-PNG-Photo.png" alt="" />
                 <input className="inputBox"  type="text" placeholder="What's on your mind."/>
 
-                
 
                 </div> 
                 <div className="post" onClick={handlePost}>
@@ -65,12 +72,12 @@ export const MessagePost = () => {
                 </div>
                 
                 <div className="messageOptions">
-                    <div  className="otherIcon">
+                    <div  className="otherIcon" onClick={handleText}>
                     <img src={video} alt="Live Video" /> 
                     <p>Live Video</p>
                     </div>
 
-                    <div  className="otherIcon">
+                    <div  className="otherIcon" onClick={handleText}>
                     <img src={photos} alt="Photo" /> 
                     <p>Photo/Video</p>
                     </div>
@@ -96,6 +103,7 @@ export const MessagePost = () => {
         {/* on click post gif will show in this div on UI  */}
             <div className="posted-data">
                 {gifPost ? <img width={"40%"}  src={gifPost} alt="" /> : ""}
+              
                   
                 </div>
         </div>
