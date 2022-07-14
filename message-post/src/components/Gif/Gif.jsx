@@ -18,7 +18,7 @@ export const Giphy = ({Data}) => {
 
     return (
         <div>
-            <input type="text" onChange={(e) => {handleSearch(e)}} />
+            <input className="inputBoxGif" placeholder="gif..." type="text" onChange={(e) => {handleSearch(e)}} />
             <div className="gifs">
 
             {gifs.map((gif) => {

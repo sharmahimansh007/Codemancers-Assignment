@@ -15,27 +15,35 @@ export const MessagePost = () => {
     return(
         <div>
             <div className="header">
-
+        {/* Facebook logo  */}
                 <img className="logo" width={"50px"} src="https://www.edigitalagency.com.au/wp-content/uploads/Facebook-logo-blue-circle-large-transparent-png.png" alt="" />
 
+        {/* all four icons on the header  */}
                 <div className="icons">
                     <img  src={home} alt="home" />
-                <img src={user} alt="user" />
+                    <img src={user} alt="user" />
                     <img src={tv} alt="tv" />
                     <img src={shop} alt="shop" />
                 </div>
             </div >
 
+
             <div className="Post-body">
+                {/* Post input box  */}
+
                 <div className="input">
                     
                     <img width={"40px"} src="https://www.pngmart.com/files/21/Account-User-PNG-Photo.png" alt="" />
                 <input className="inputBox"  type="text" placeholder="What's on your mind."/>
 
                 </div> 
+
+                {/* div for showing gif  */}
                 <div className="myGif">
                     {Data ? <img width={"60%"}  src={Data} alt="" /> : ""}
                 </div>
+
+                {/* imported fetched gif from Gif.jsx  */}
                 <div >
                     {value ? <Giphy Data={setData} /> : null}
                     
@@ -52,6 +60,8 @@ export const MessagePost = () => {
                     <p>Photo/Video</p>
                     </div>
 
+                    {/* On click function for gifs to post  */}
+                    
                     <div onClick={() => {setValue(1)}}  className="otherIcon">
                     <img src="https://cdn-icons.flaticon.com/png/512/5362/premium/5362497.png?token=exp=1657724082~hmac=050ff87ca0a09d17357424ed91b29490" alt="gif" /> 
                     <p>Gif</p>
